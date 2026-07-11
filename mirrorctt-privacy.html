@@ -357,7 +357,7 @@
 
         <section id="overview">
           <h2>1. Overview</h2>
-          <p>MirrorCTT is a Chrome extension that assists users by reading information displayed in supported browser tabs and presenting helpful, user-facing features based on that information.</p>
+          <p>MirrorCTT is a productivity Chrome extension intended for authorized call-center and lead-booking personnel. It works with supported customer relationship management, dialer, and lead-management webpages to organize information already available to the signed-in user and assist with lead, callback, appointment, and booking workflows.</p>
           <p>This policy applies to the MirrorCTT Chrome extension. It does not apply to websites or services operated by others, including websites on which MirrorCTT may run.</p>
         </section>
 
@@ -365,13 +365,15 @@
           <h2>2. Information MirrorCTT Accesses</h2>
           <p>To provide its core functionality, MirrorCTT may access webpage content that is visible or available within supported websites. Depending on the page, this content may include:</p>
           <ul>
-            <li>customer names and contact information, such as phone numbers and addresses;</li>
-            <li>lead, project, or account information;</li>
-            <li>appointment or scheduling information; and</li>
-            <li>similar information displayed in a supported browser tab.</li>
+            <li>customer names, phone numbers, email addresses, and addresses;</li>
+            <li>lead IDs and lead, project, or account information;</li>
+            <li>client or campaign names;</li>
+            <li>appointment, callback, and booking details;</li>
+            <li>call dispositions and notes displayed on supported pages; and</li>
+            <li>similar workflow information displayed in a supported browser tab.</li>
           </ul>
           <p>MirrorCTT is intended to access only the information needed to provide its stated, user-facing functionality. The exact information available to the extension depends on the supported website and the page the user is viewing.</p>
-          <!-- VERIFY BEFORE PUBLISHING: Confirm that this list covers every category of webpage data and every Chrome permission the current extension version can access. Add any missing category in plain language. -->
+          <!-- VERIFY AGAINST EACH RELEASE: Confirm that MirrorCTT can genuinely access every category listed above, including email addresses, lead IDs, client or campaign names, call dispositions, and notes. Remove any category the current version cannot access, and add any missing category in plain language. -->
         </section>
 
         <section id="information-use">
@@ -383,9 +385,10 @@
 
         <section id="local-storage">
           <h2>4. Local Storage</h2>
-          <p>MirrorCTT may store extension settings, preferences, and other feature configuration locally in the user’s browser using Chrome’s storage APIs. This local storage helps preserve the user’s choices between browser sessions.</p>
+          <p>MirrorCTT may store extension settings, preferences, and user-saved workflow information locally in the user’s browser. Depending on the features used, locally stored information may include saved lead details, callback information, booking information, customer names, phone numbers, addresses, project details, and related notes selected or saved by the user.</p>
+          <p>This information is stored locally to preserve the user’s workflow between browser sessions and is not transmitted to the developer unless expressly stated elsewhere in this policy.</p>
           <p>Locally stored extension data remains on the user’s device unless the browser syncs it under the user’s Chrome settings.</p>
-          <!-- VERIFY BEFORE PUBLISHING: Determine whether chrome.storage.local, chrome.storage.sync, or both are used. If sync storage is used, keep the sentence above. If only local storage is used, remove the sync qualification. Also disclose any cached webpage content if the extension stores it. -->
+          <!-- VERIFY AGAINST EACH RELEASE: Confirm that the current extension stores the workflow categories listed above. Remove any category it does not store. Determine whether chrome.storage.local, chrome.storage.sync, or both are used. If sync storage is used, keep the sync sentence above; if only local storage is used, remove that sentence. Also disclose any other cached webpage content. -->
         </section>
 
         <section id="data-transmission">
@@ -403,8 +406,7 @@
 
         <section id="sharing-sale">
           <h2>6. Data Sharing and Sale</h2>
-          <p>MirrorCTT does not sell user data. MirrorCTT does not share accessed information with unrelated third parties or use it for advertising purposes.</p>
-          <p>Information may be disclosed if required by applicable law or a valid legal process, or when reasonably necessary to protect users, the public, or the developer’s legal rights. Any such disclosure would be limited to what is legally required.</p>
+          <p>MirrorCTT does not sell user data or share information accessed from supported webpages with unrelated third parties. Because locally processed information is not received or controlled by the developer, the developer generally cannot access or disclose that information.</p>
           <!-- VERIFY BEFORE PUBLISHING: Confirm there are no service providers, subprocessors, contractors, affiliates, or external integrations that receive user data. If any do, disclose them and their purpose here and in Data Transmission. -->
         </section>
 
@@ -424,7 +426,7 @@
 
         <section id="limited-use">
           <h2>9. Chrome Web Store Limited Use Disclosure</h2>
-          <p>MirrorCTT’s use and transfer of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+          <p>MirrorCTT’s use of information obtained through Chrome extension APIs complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data-faq" target="_blank" rel="noopener noreferrer">Chrome Web Store User Data Policy</a>, including its Limited Use requirements.</p>
           <p>Information received through Chrome APIs is used only to provide or improve MirrorCTT’s prominent, user-facing features. It is not used for personalized advertising, sold to third parties, or used to determine creditworthiness or for lending purposes.</p>
           <!-- VERIFY BEFORE PUBLISHING: Confirm the extension's current handling of all data received through Chrome APIs satisfies every applicable Limited Use restriction. -->
         </section>
